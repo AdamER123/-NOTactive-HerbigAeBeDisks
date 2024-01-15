@@ -1,0 +1,72 @@
+locus
+	expand 1.5
+	limits -0.3 2 -0.3 2
+	lw 2
+
+
+	data "/home/ncalvet/fotometria/bessell_brett.dwarf"
+	lines 2 26
+	read{xc 5 yc 4} 
+	#set jmhd=0.00182+0.9107*yc
+	#set hmkd=0.9709*xc
+	set jmhg=yc
+	set hmkg=xc
+        ltype 2
+        connect hmkd jmhd
+
+	data "/home/ncalvet/fotometria/bessell_brett.giant"
+        lines 2 17
+        read{xc 5 yc 4} 
+        #set jmhg=0.00182+0.9107*yc 
+        #set hmkg=0.9709*xc
+	set jmhg=yc
+	set hmkg=xc
+        ltype 2  
+        connect hmkg jmhg
+
+
+	ltype 0
+	set hmk=0.2,1,0.1
+	#locus
+	set jmh=0.58*hmk+0.52
+	#cit to bb
+	set jmh=(jmh-0.00182)/0.9107 
+	connect hmk jmh
+
+	set av=0,25,5
+	#set y1=0.6840+0.106*av
+	#set x1=0.36678+0.068*av
+	#K7d
+	define c1((0.66-0.00182)/0.9107)
+	define c2(0.13/0.9709)
+	set y1=$c1+0.106*av
+        set x1=$c2+0.068*av
+	ptype 4 1
+        points x1 y1
+        ltype 1
+	connect x1 y1
+	define c1((0.749111-0.00182)/0.9107)
+	define c2(0.377778/0.9709)
+	set y1=$c1+0.106*av
+	set x1=$c2+0.068*av
+	ptype 4 1
+	ltype 0
+	points x1 y1
+	ltype 1
+	connect x1 y1
+	define c1((1.11000-0.00182)/0.9107)
+	define c2(1.0/0.9709)
+	set y1=$c1+0.106*av
+        set x1=$c2+0.068*av
+        ptype 4 1
+	ltype 0
+        points x1 y1
+        ltype 1   
+        connect x1 y1
+
+
+
+	#expand 1.2
+	#box
+	#xlabel H-K
+	#ylabel J-H

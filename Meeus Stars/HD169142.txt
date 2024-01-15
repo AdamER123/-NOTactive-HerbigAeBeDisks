@@ -1,0 +1,60 @@
+\                                                                               
+\fixlen = T
+\primary    = 0
+\RowsRetrieved =                 2   
+\QueryTime     =  00:00:00.05345               
+\ORIGIN  = 'IPAC Infrared Science Archive (IRSA), Caltech/JPL'
+\DATETIME= '2015-01-17 11:58:12'
+\DataTag = 'ADS/IRSA.Gator#2015/0117/115812_26004'
+\DATABASE= 'AllWISE Source Catalog (wise_allwise_p3as_psd)'
+\EQUINOX = 'J2000'
+\SKYAREA = 'within 10 arcsec of  ra=276.12408 dec=-29.78038 Eq J2000 '
+\StatusFile = '/workspace/TMP_rERYee_10733/Gator/irsa/26004/log.26004.html'
+\SQL     = 'WHERE (no constraints) 
+\SQL     = 'SELECT (19 column names follow in next row.)'
+\
+\ designation
+\ ___ unique WISE source designation
+\ ra (deg) 
+\ ___ right ascension (J2000)
+\ dec (deg) 
+\ ___ declination (J2000)
+\ w1mpro (mag) 
+\ ___ instrumental profile-fit photometry magnitude, band 1
+\ w1sigmpro (mag) 
+\ ___ instrumental profile-fit photometry flux uncertainty in mag units, band 1
+\ w2mpro (mag) 
+\ ___ instrumental profile-fit photometry magnitude, band 2
+\ w2sigmpro (mag) 
+\ ___ instrumental profile-fit photometry flux uncertainty in mag units, band 2
+\ w3mpro (mag) 
+\ ___ instrumental profile-fit photometry magnitude, band 3
+\ w3sigmpro (mag) 
+\ ___ instrumental profile-fit photometry flux uncertainty in mag units, band 3
+\ w4mpro (mag) 
+\ ___ instrumental profile-fit photometry magnitude, band 4
+\ w4sigmpro (mag) 
+\ ___ instrumental profile-fit photometry flux uncertainty in mag units, band 4
+\ j_m_2mass (mag) 
+\ ___ J magnitude entry of the associated 2MASS All-Sky PSC source
+\ j_msig_2mass (mag) 
+\ ___ J photometric uncertainty of the associated 2MASS All-Sky PSC source
+\ h_m_2mass (mag) 
+\ ___ H magnitude entry of the associated 2MASS All-Sky PSC source
+\ h_msig_2mass (mag) 
+\ ___ H photometric uncertainty of the associated 2MASS All-Sky PSC source
+\ k_m_2mass (mag) 
+\ ___ Ks magnitude entry of the associated 2MASS All-Sky PSC source
+\ k_msig_2mass (mag) 
+\ ___ Ks photometric uncertainty of the associated 2MASS All-Sky PSC source
+\ angle (deg) 
+\ ___ Position Angle in degree.
+\ dist (arcsec) 
+\ ___ Distance between the target position and each source in arcsec.
+\
+|         designation|         ra|        dec| w1mpro|w1sigmpro| w2mpro|w2sigmpro| w3mpro|w3sigmpro| w4mpro|w4sigmpro|j_m_2mass|j_msig_2mass|h_m_2mass|h_msig_2mass|k_m_2mass|k_msig_2mass|             dist|           angle|
+|                char|     double|     double| double|   double| double|   double| double|   double| double|   double|   double|      double|   double|      double|   double|      double|           double|          double|
+|                    |        deg|        deg|    mag|      mag|    mag|      mag|    mag|      mag|    mag|      mag|      mag|         mag|      mag|         mag|      mag|         mag|           arcsec|             deg|
+|                null|       null|       null|   null|     null|   null|     null|   null|     null|   null|     null|     null|        null|     null|        null|     null|        null|             null|            null|
+  J182429.77-294649.6 276.1240741 -29.7804589   6.203     0.085   5.650     0.047   2.697     0.010  -0.632     0.006     7.310        0.021     6.911        0.038     6.410        0.024          0.284635       183.713437 
+  J182429.30-294655.9 276.1221124 -29.7822202   8.792     0.121   8.674     0.108   8.100     0.415   4.550      null     9.894        0.032     9.265        0.031     9.024        0.030          9.037859       222.861310 
